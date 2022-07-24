@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from sqlalchemy import create_engine, Column, Integer, String
+from sqlalchemy import Column, Integer, String
 from db import Base
 
 @dataclass

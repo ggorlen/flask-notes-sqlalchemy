@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from db import Base, Session
+from db import Session
 from models import Note
 
 app = Flask(__name__)
@@ -59,6 +59,5 @@ def index():
     return "", 200
 
 if __name__ == "__main__":
-    Base.metadata.create_all(engine)
     app.run(debug=True)
 
